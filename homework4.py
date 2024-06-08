@@ -1,0 +1,10 @@
+my_string=input('Good morning, ')
+print(len(my_string))
+print(my_string.lower())
+print(my_string.upper())
+print(my_string .replace(' ', ''))
+# я в следующем задании не очень выкупила как надо было сделать правильно, потому сделала двумя способами
+print(my_string[0])
+print(my_string[-1])
+print(my_string .replace('ear Alice',''))
+print(my_string .replace('Dear Alic',''))
