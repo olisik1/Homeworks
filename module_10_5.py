@@ -2,7 +2,7 @@ import os
 import time
 from multiprocessing import Pool
 
-# Функция считывания информации из файла
+
 def readinfo(file_name):
     alldata = []
     try:
@@ -16,13 +16,12 @@ def readinfo(file_name):
         print(f"Файл не найден: {file_name}")
     return alldata
 
-# Список названий файлов в соответствии с названиями файлов архива
-file_names = ["file1.txt", "file2.txt", "file3.txt", "file4.txt"]  # Обновите список в зависимости от реальных имен файлов
+file_names = ["file1.txt", "file2.txt", "file3.txt", "file4.txt"]
 
 def linear_read(files):
     start_time = time.time()
     for file_name in files:
-        readinfo(file_name)  # Огонь функция линейно
+        readinfo(file_name)
     end_time = time.time()
     print(f"Время линейного выполнения: {end_time - start_time} секунд")
 
