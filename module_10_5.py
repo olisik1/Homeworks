@@ -33,14 +33,10 @@ def multiprocess_read(files):
     print(f"Время многопроцессного выполнения: {end_time - start_time} секунд")
 
 if __name__ == "__main__":
-    # Проверка наличия файлов перед выполнением функций
+  
     existing_files = [file for file in file_names if os.path.exists(file)]
     if not existing_files:
         print("Ни один из указанных файлов не найден.")
     else:
-        # Вызов линейного считывания
-        # linear_read(existing_files)
-
-        # Вызов многопроцессного считывания
-        # Если хотите выполнить многопроцессное чтение, закомментируйте выше и раскомментируйте ниже
+        
         multiprocess_read(existing_files)
